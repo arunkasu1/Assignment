@@ -1,0 +1,86 @@
+.ask-catura-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .ask-catura-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .ask-catura-header h2 {
+    font-size: 18px;
+    color: #1e293b;
+  }
+  
+  .ask-catura-options span {
+    margin-left: 10px;
+    color: #3b82f6;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .ask-catura-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .greeting-template {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .template-header {
+    font-size: 14px;
+    color: #1e293b;
+  }
+  
+  .template-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .template-button {
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #ffffff;
+    background-color: #3b82f6;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .template-button.secondary {
+    background-color: #64748b;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #475569;
+  }
+  
+  .send-button {
+    align-self: flex-end;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+  }
+  

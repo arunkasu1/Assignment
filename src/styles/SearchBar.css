@@ -1,0 +1,56 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+}
+
+.home-icon, .settings-icon, .logout-icon {
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.process-owner-btn {
+    background-color: yellow;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.admin-btn {
+    background-color: pink;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.profile-pic {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.profile-name {
+    margin-right: 10px;
+}

@@ -1,0 +1,105 @@
+/* Sidebar container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    background-color: #0a1931; /* Dark blue background */
+    color: white;
+    width: 250px; /* Width when open */
+    transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
+    overflow: hidden;
+    z-index: 999;
+  }
+  
+  .sidebar.closed {
+    width: 60px; /* Narrow width when closed */
+  }
+  
+  /* Sidebar header */
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px; /* Matches the height of the logo area */
+    background-color: #1e3a8a; /* Slightly lighter blue */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .sidebar-header h2 {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .sidebar-header img {
+    width: 30px; /* Logo size */
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  .sidebar-header button {
+    position: absolute;
+    right: 15px;
+    top: 20px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Menu list */
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0; /* Space around menu items */
+  }
+  
+  .menu li {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px; /* Spacing for menu items */
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .menu li svg {
+    margin-right: 15px; /* Space between icon and text */
+    font-size: 18px; /* Icon size */
+    min-width: 20px; /* Keeps the layout aligned when collapsed */
+  }
+  
+  .menu li:hover {
+    background-color: #1e293b; /* Hover background color */
+  }
+  
+  /* Menu item text (hide when sidebar is collapsed) */
+  .menu li span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .sidebar.closed .menu li span {
+    opacity: 0;
+    visibility: hidden;
+  }
+  
+  /* Submenu styles (if needed) */
+  .menu li.submenu {
+    padding-left: 40px; /* Indentation for nested items */
+  }
+  
+  .menu li.submenu:hover {
+    background-color: #243b55;
+  }
+  

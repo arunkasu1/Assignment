@@ -1,0 +1,42 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f9; /* Light gray background for content */
+}
+
+.app {
+  display: flex;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+.sidebar.open + .content {
+  margin-left: 250px;
+}
+
+.sidebar.closed + .content {
+  margin-left: 60px;
+}
+
+/* Cards (for demonstration) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(33.333% - 20px); /* Responsive 3-column layout */
+  min-width: 300px;
+  max-width: 400px;
+  text-align: center;
+}

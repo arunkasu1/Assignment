@@ -1,0 +1,30 @@
+.action-launcher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .action-launcher button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  .escalate-button {
+    background-color: red;
+  }
+  .action-button {
+    width: 150px;
+    height: 40px;
+    padding: 10px;
+    margin: 5px;
+    font-size: 16px;
+  }
+  
